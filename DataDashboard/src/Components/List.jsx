@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { Link } from "react-router-dom";
+import { MdInfo } from "react-icons/md"
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 export default function List({inputs, pastWeather, setPastWeather}){
@@ -22,11 +24,16 @@ export default function List({inputs, pastWeather, setPastWeather}){
             <tbody>
                 { inputs && pastWeather.map((date, index) => 
                     <tr key={index}>
-                        <td>{date.datetime}</td>
+                        <td><Link
+                            to={`/WeatherDetails/${date.datetime}`}
+                        >
+                            <span className='icon'><MdInfo /></span> {date.datetime}
+                        </Link></td>
                         <td>{date.min_temp + "°C"}</td>
                         <td>{date.max_temp + "°C"}</td>
                         <td>{date.clouds + "%"}</td>
                         <td>{date.precip + "mm"}</td>
+                        
                     </tr>
                 ) 
                 }

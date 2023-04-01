@@ -146,9 +146,12 @@ button {
 .weatherDetails table {
   margin-top: 20px;
 }
-.weatherDetails table, th, td {
+.weatherDetails table, 
+.weatherDetails th, 
+.weatherDetails td {
   border: solid 1px;
 }
-.weatherDetails th, td {
+.weatherDetails th, 
+.weatherDetails td {
   padding: 8px 20px;
 }
