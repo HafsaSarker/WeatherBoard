@@ -24,11 +24,13 @@ export default function List({inputs, pastWeather, setPastWeather}){
             <tbody>
                 { inputs && pastWeather.map((date, index) => 
                     <tr key={index}>
-                        <td><Link
-                            to={`/WeatherDetails/${date.datetime}`}
-                        >
-                            <span className='icon'><MdInfo /></span> {date.datetime}
-                        </Link></td>
+                        <td>
+                            <Link
+                                to={`/WeatherDetails/${date.datetime}`}
+                            >
+                                <span><MdInfo /></span> {date.datetime}
+                            </Link>
+                        </td>
                         <td>{date.min_temp + "°C"}</td>
                         <td>{date.max_temp + "°C"}</td>
                         <td>{date.clouds + "%"}</td>
