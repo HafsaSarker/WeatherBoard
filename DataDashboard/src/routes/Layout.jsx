@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar";
 
 const Layout = () => {
     return (
-        <div>
+        <div className="layout">
             <div className='navigation-bar'>
                 <Header />
                 

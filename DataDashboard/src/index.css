@@ -14,7 +14,7 @@ html {
   height: 100vh;
 }
 
-.App {
+.layout {
   display: flex;
   height: 100%;
 }
