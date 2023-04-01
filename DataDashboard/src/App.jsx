@@ -37,10 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='navigation-bar'>
-        <Header />
-        <Navbar />
-      </div>
+      
       <div className='main'>
         <div className='feature-cards'>
           <Card 
