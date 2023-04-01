@@ -74,6 +74,7 @@
 
 
 table, tbody, th, td {
+  color: white;
   text-align: center;
 }
 
@@ -123,4 +124,31 @@ button {
   background-color: #737192;
   padding: 8px 10px;
   border-radius: 10px;
+}
+
+.weatherDetails {
+  background-color:#8885ac;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-top: 20%;
+  min-height: 600px;
+  min-width: 700px;
+  margin-left: 40px;
+}
+.weatherDetails h1{
+  background-color:#737192;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.weatherDetails table {
+  margin-top: 20px;
+}
+.weatherDetails table, th, td {
+  border: solid 1px;
+}
+.weatherDetails th, td {
+  padding: 8px 20px;
 }

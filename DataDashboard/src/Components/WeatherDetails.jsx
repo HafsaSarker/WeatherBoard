@@ -22,12 +22,12 @@ const WeatherDetails = () => {
     return (
      <div>
         { fullDetails ? (
-            <div>
+            <div className="weatherDetails">
                 <h1>{fullDetails.city_name}</h1>
                 <h2>Date: {fullDetails.data[0].datetime}</h2>
                 <h4>Lat: {fullDetails.lat}, Lon: {fullDetails.lon}</h4>
 
-                <table className="weatherDetails">
+                <table>
                     <tbody>
                         <tr>
                             <th>Average temperature</th>
